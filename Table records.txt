@@ -1,0 +1,21 @@
+Operator Tabele:-
+Operator id      Name      Address       Phone     Email
+1               Kamla      Bhopal        7777      kamla@gmail.com
+2               Hans       Guna          8888      hans@gmail.com
+
+Route :-
+Route id        Station Name         Station id
+1               Guna                     1
+1               Bhopal                   2
+2               Bhopal                   1
+2               Guna                     2
+
+Bus :-          
+Bus id           Bus type          Capacity        Fare       Operator_id           Routeid
+1                AC 3X2             50             100           1                     1
+2                AC Sleeper2X1      50             400           2                     2
+
+Run:-
+BusID            Runing Date          Seat Available
+1                01/12/2022             35      
+2                01/12/2022             40

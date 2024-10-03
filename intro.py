@@ -1,0 +1,26 @@
+from tkinter import*
+import os
+root=Tk()
+root.title('ONLINE BUS BOOKING')
+w,h=root.winfo_screenwidth(),root.winfo_screenheight()
+root.geometry('%dx%d+0+0'%(w,h))
+img=PhotoImage(file='.\\Bus_for_project.png')
+Label(root,image=img).grid(padx=(w//2.5))
+Label(root,text='ONLINE BUS BOOKING SYSTEM',font='Arial 25 bold',bg='light blue',fg='red').grid(row=1,column=0)
+Label(root,text="").grid(row=2,column=0)
+Label(root,text='Name = DEEPAK RATHORE',font='Arial 18',fg='blue').grid(row=3,column=0)
+Label(root,text="").grid(row=4,column=0)
+Label(root,text='Enrollment number : 211B0907 ',font='Arial 18',fg='blue').grid(row=5,column=0)
+Label(root,text="").grid(row=6,column=0)
+Label(root,text='Mobile number : 9399869842 ',font='Arial 18',fg='blue').grid(row=7,column=0)
+Label(root,text="").grid(row=8,column=0)
+Label(root,text="").grid(row=9,column=0)
+Label(root,text="").grid(row=10,column=0)
+Label(root,text='Sumbitted To : DR. Mahesh Kumar',font='Arial 18',bg='light blue',fg='red').grid(row=11,column=0)
+Label(root,text='Project Based L:earning',font='Arial 18',fg='red').grid(row=12,column=0)
+def fun(e=0):
+    root.destroy()
+    os.startfile(".\\home.py")
+root.after(3000,fun)
+root.mainloop()
+

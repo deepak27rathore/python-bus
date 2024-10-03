@@ -1,0 +1,10 @@
+import sqlite3
+con=sqlite3.Connection('database.db')
+cur=con.cursor()
+cur.execute("DROP TABLE operator")
+cur.execute("DROP TABLE bus")
+cur.execute("DROP TABLE run")
+cur.execute("DROP TABLE route")
+cur.execute("DROP TABLE booking")
+con.commit()
+con.close()
